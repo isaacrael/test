@@ -1,0 +1,67 @@
+{% extends 'unix_shells_quiz/base.html' %}
+
+{% block title %}UNIX Shells Detail{% endblock %}
+
+
+
+{% block body %}
+<div class="w3-container w3-yellow">
+    <p>
+    <br>
+    <h1 style="text-align:center; color:blue;">Short Answer Quiz</h1>
+    <br>
+    </p>
+    <h2 style="color:blue">{{ question.question_text }}</h2>
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    <form action="{% url 'unix_shells_quiz:results' question.id %}" method="post">
+    {% csrf_token %}
+      <table>{{ form.as_table }}</table>
+       <p><label for="id_name"> Type Your Answer:</label>
+        <input align="left" class="textinput textInput form-control size=50" id="id_name" maxlength="50" name="textfield" type="text" style="width:400px"/>
+      <input type="submit" value="Submit" />
+    </form>
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+{% endblock %}

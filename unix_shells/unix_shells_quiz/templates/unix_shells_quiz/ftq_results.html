@@ -1,0 +1,101 @@
+{% extends 'unix_shells_quiz/base.html' %}
+
+{% block title %}FTQ Results{% endblock %}
+
+
+
+{% block body %}
+
+<div class="w3-container w3-yellow">
+
+    <p>
+    <center>
+    <br><br>
+        <h1 style="text-align:center; color:blue;">Feynman Technique Quiz</h1>
+    <br>
+
+
+
+    <br>
+    <br>
+
+            <h3 style="color:blue">An excellent answer would consist of the following information .....</h3><h3 style="color:green;">{{ correct_answer }}</h3>
+
+    <br>
+    </p>
+    <!-- if the 7th element is a string then "post" included in /image/post/*.png -->
+        {% if image.7 == "p" %}
+                <img src= "{{ image }}" style="width:250px;height:250px;">
+        {% endif %}
+
+    <br>
+    <br>
+    <br>
+     <p style="color:blue;" style="font-size:10px">Rate Your Answer By Clicking On A Button Below<br><br>
+     Mastery - You have mastered this particular question.<br>
+     Needs Improvement - Your answer and understanding of the subject matter needs improvement.<br>
+     Hole - There is a significant hole in your knowledge in regards to this question.<br>
+     </p>
+
+
+        <button type="button" class="btn btn-primary" onclick="">Mastery</button>
+        {{ knowledge_mastery }}
+
+        <button type="button" class="btn btn-primary">Needs Improvement</button>
+        {{ knowledge_needs_improvement }}
+
+        <button type="button" class="btn btn-danger">Hole</button>
+        {{ knowledge_black_hole }}
+
+    <br>
+    </center>
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+{% endblock %}

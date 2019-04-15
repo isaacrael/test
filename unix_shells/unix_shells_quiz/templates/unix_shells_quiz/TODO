@@ -1,0 +1,100 @@
+# TODO - Git specific
+    # Done - TODO research how versioning is done in Git
+    # In Progress - TODO research what tags are and how they are used
+
+    # TODO research pycharm snippets feature and incorporate if useful
+    # Done - TODO research how versioning is done in Git
+
+
+# TODO - Python Specific
+    # TODO research how packaging is done in Python for web apps and desktop apps
+
+# TODO - Page Redirect On Login to About Page
+    # TODO - Create Features/Redirect_To_About_Page
+    # TODO - verify that About page has logic to determine if user is logged in if not add it to the About page
+    # TODO - Rather than doing a redirect to Quiz index page redirect to About page on Login
+    # TODO - Push changes to remote
+    # TODO - Merge changes to Development branch & push changes to remote
+    # TODO - Merge changes to master branch and push changes to remote
+
+
+
+# TODO - Create Drop Down Link or Menu for Quizes
+    # TODO - Create Features/Quiz_Drop_Down
+    #
+
+
+
+# TODO Reset Scores To Zero
+    #   Done Create Form Reset Scores To Zero Button in results.html that calls reset_scores.html
+    #   Done Create new html file called reset_scores.html
+    #   Done Copy results.html to the reset_scores.html file & edit to display Your Scores Have Been Zeroed!
+    #   Done Create a new function in views.py called reset_scores
+    #   Done Research zeroing out a table column in Python Django
+    #   Done Create reset_scores url in urls.py
+    #   Done Write def reset_scores():
+
+# Done TODO create branch Features/DB_Changes
+    # Done TODO add questions and answers to db.sqlite3
+    # Done TODO rename db.sqlite3 to giturdone.sqlite3
+    # Done TODO edit settings.py to use giturdone.sqlite3
+    # Done  TODO backup giturdone.sqlite3 to thumb drive
+
+
+# TODO create branch Features/Answer_Images
+    # Done TODO add thumbs up and thumbs down images for correct answers and wrong answers
+
+
+
+# TODO Media URL & Media Root
+    # Done TODO Add Media URL and Media Root to settings.py
+    # Done TODO Add code to results.html so that images are only displayed if they exist
+    # Done TODO Add codes to results function in views.py that sets image = str(item.image)
+    # Done TODO Add image to context dictionary in results function in views.py.
+
+
+
+# TODO create branch Features/Refactoring
+
+
+
+
+
+# TODO create Features/Cosmetic_Changes
+    # Done - TODO change footer color to red in reset_scores.html
+    # TODO double check that only blue text exists on pages
+    # Done - TODO create smaller jumbotron on the resources page
+
+
+
+
+# TODO create Features/Resources
+    # In Progress - TODO research how to determine most popular / highest rated YouTube videos and websites
+    # TODO add 3 most popular Git YouTube videos
+    # TODO add 3 most popular Git Websites
+
+
+# TODO GitUrDone Version 2
+    # TODO create a utilities menu in next version that includes reset scores button,
+    # TODO black hole identification, tool bootstrap icon
+    # TODO create a Help menu that provides information about each quiz and any
+    # TODO instructions computer user may find helpful
+
+
+    # TODO incorporate Feynman Technique
+    # TODO incorporate method that identifies black holes in your knowledge
+    # TODO possibly using image of black hole with categories listed around
+    # Done - TODO locate and download blackhole image
+    # TODO create template for black hole image analyser
+    # TODO create FT_Questions Model based on Questions Model
+    # TODO create FT_Answers Model based on Answers Model
+    # TODO register FT_Questions & FT_Answers in admin.py
+    # TODO layout the design of Feynman Technique Quiz
+
+    # TODO incorporate graphing into next version
+
+
+    # TODO incorporate multiple choice answer quiz
+
+
+    # TODO create Help Page

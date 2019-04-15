@@ -1,0 +1,86 @@
+{% extends 'unix_shells_quiz/base.html' %}
+
+{% block title %}UNIX Shells Quiz Results{% endblock %}
+
+
+
+{% block body %}
+
+<div class="w3-container w3-yellow">
+    <p>
+    <br>
+    <h1 style="text-align:center; color:blue;">Short Answer Quiz</h1>
+    <br>
+    </p>
+
+
+    <h3 align="left" style="color:Blue;">Grade: {{ Grade }}</h3>
+    <h3 align="left" style="color:Blue;">Score: {{ score }} %</h3>
+    <h3 align="left" style="color:Blue;">Total Questions Answered: {{ total_questions_answered }}</h3>
+    <h3 align="left" style="color:Blue;">Correct Answers: {{ total_correct_answers }}</h3>
+    <h3 align="left" style="color:Blue;">Wrong Answers: {{ total_wrong_answers }}</h3>
+
+
+     <form action="{% url 'unix_shells_quiz:reset_scores' %}" method="post">
+    {% csrf_token %}
+      <table>{{ form.as_table }}</table>
+    <!--   <p><label for="id_name"> Click Button To Reset Your Scores To Zero:</label>
+    <input align="left" class="textinput textInput form-control size=50" id="id_name" maxlength="50" name="textfield" type="text" style="width:400px"/></p>-->
+      <input type="submit" style=color:red value="Reset Scores To Zero" /></p>
+    <!--<button type="submit" class="btn btn-danger btn-sm">Reset Scores To Zero</button>-->
+    </form>
+
+
+    <a href="http://localhost:8000/quiz/" target="_blank" button type="button" class="btn btn-lg btn-primary" disabled>Return To Short Answer Quiz</button></a>
+
+    <center>
+
+
+    {% if correct_answer == answer %}
+        <img src="/static/images/two_thumbs_up.png" style="width:125px;height:100px;">
+        <h3 style="color:blue">Yep!...the correct answer is</h3><h3 style="color:green">{{ answer }} </h3>
+    {% else %}
+        <img src="/static/images/thumbs_down.png" style="width:125px;height:100px;">
+        <h3 style="color:blue">Nope!....the correct answer is</h3><h3 style="color:green"> {{ correct_answer }}</h3><br>
+        <h3 style="color:blue"> Your answer was</h3><h3 style="color:red"> {{ answer }} </h3>
+    {% endif %}
+<!-- if the 7th element is a string then "post" included in /image/post/*.png -->
+    {% if image.7 == "p" %}
+        <img src= "{{ image }}" style="width:250px;height:250px;">
+    {% endif %}
+
+    </center>
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+{% endblock %}
