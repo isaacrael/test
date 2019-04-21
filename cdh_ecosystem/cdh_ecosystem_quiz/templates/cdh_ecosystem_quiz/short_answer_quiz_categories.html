@@ -1,0 +1,81 @@
+{% extends 'cdh_ecosystem_quiz/base.html' %}
+
+{% block title %}SA Quiz Categories{% endblock %}
+
+
+
+{% block body %}
+<div class="w3-container w3-yellow">
+
+    <h3>
+    <ul>
+    <li>[1] Apache NiFi</li>
+<!--    <li>[2] Git Undoing Changes</li>
+    <li>[3] Git Rewriting History</li>
+    <li>[4] Git Branches</li>
+    <li>[5] Git Remote Repositories</li>
+    <li>[6] Git Config</li>
+    <li>[7] Git Log</li>
+    <li>[8] Git Diff</li>
+    <li>[9] Git Reset</li>
+    <li>[10] Git Rebase</li>
+    <li>[11] Git Pull</li>
+    <li>[12] Git Push</li>-->
+    </ul>
+    </h3>
+
+    {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+    <form method="POST" action="/quiz/">
+    {% csrf_token %}
+      <table>{{ form.as_table }}</table>
+       <p><label for="id_name"> Please, type in the number that corresponds to the quiz that you would like to take then click submit
+    and click on the Quiz menu option to take your quiz.</label>
+    <input class="textinput textInput form-control" id="id_name" maxlength="100" name="textfield" type="text" style="width:400px"/></p>
+      <input type="submit" value="Submit" maxlength="30"/>
+    </form>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+</div>
+{% endblock %}
