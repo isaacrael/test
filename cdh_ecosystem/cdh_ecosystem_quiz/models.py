@@ -54,7 +54,8 @@ class Ftq_Question(models.Model):
 
 class Ftq_Answer(models.Model):
     question = models.ForeignKey(Ftq_Question, on_delete = models.DO_NOTHING)
-    answer_text = models.CharField(max_length=1200)
+#    answer_text = models.CharField(max_length=1200)
+    answer_text = models.TextField()
     image = models.ImageField(upload_to='post_image', blank=True)
     knowledge_mastery = models.IntegerField(default=0)
     knowledge_needs_improvement = models.IntegerField(default=0)
